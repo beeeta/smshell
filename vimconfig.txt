@@ -1,47 +1,16 @@
-#download vim plugin manager tool
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+#!/bin/sh
+cd ~
+mkdir -p software/k-vim
+cd ~/software/k-vim
+git clone https://github.com/wklken/k-vim.git 2>/dev/null
 
-# config .vimrc file
-touch ~/.vimrc
+apt-get install ctags 2>/dev/null
+apt-get install build-essential cmake python-dev 2>/dev/null
+apt-get install silversearcher-ag 2>/dev/null
 
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+pip install pyflakes
+pip install pylint
+pip install pep8
 
 
-" Define bundles via Github repos
-Bundle 'christoomey/vim-run-interactive'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'croaky/vim-colors-github'
-Bundle 'danro/rename.vim'
-Bundle 'majutsushi/tagbar'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'kien/ctrlp.vim'
-Bundle 'pbrisbin/vim-mkdir'
-Bundle 'scrooloose/syntastic'
-Bundle 'slim-template/vim-slim'
-Bundle 'thoughtbot/vim-rspec'
-Bundle 'tpope/vim-bundler'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-surround'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'vim-scripts/ctags.vim'
-Bundle 'vim-scripts/matchit.zip'
-Bundle 'vim-scripts/tComment'
-Bundle "mattn/emmet-vim"
-Bundle "scrooloose/nerdtree"
-Bundle "Lokaltog/vim-powerline"
-Bundle "godlygeek/tabular"
-Bundle "msanders/snipmate.vim"
-Bundle "jelera/vim-javascript-syntax"
-Bundle "altercation/vim-colors-solarized"
-Bundle "othree/html5.vim"
-Bundle "xsbeats/vim-blade"
-Bundle "Raimondi/delimitMate"
-Bundle "groenewege/vim-less"
-Bundle "evanmiller/nginx-vim-syntax"
-Bundle "Lokaltog/vim-easymotion"
-Bundle "tomasr/molokai"
-Bundle "klen/python-mode"
+

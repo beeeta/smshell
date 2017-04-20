@@ -1,0 +1,11 @@
+--2017-04-19 05:33:23--  http://www.baidu.com/
+Resolving www.baidu.com (www.baidu.com)... 14.215.177.38, 14.215.177.37
+Connecting to www.baidu.com (www.baidu.com)|14.215.177.38|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2381 (2.3K) [text/html]
+Saving to: ‘savefile’
+
+     0K ..                                                    100% 2.03M=0.001s
+
+2017-04-19 05:33:23 (2.03 MB/s) - ‘savefile’ saved [2381/2381]
+
